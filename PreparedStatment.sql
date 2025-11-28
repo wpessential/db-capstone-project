@@ -1,0 +1,1 @@
+PREPARE GetOrderDetail FROM 'SELECT o.OrderID, QuantityOrdered, TotalCost FROM orders o NATURAL JOIN menuorder mo NATURAL JOIN customer  WHERE CustomerID = ? ';
